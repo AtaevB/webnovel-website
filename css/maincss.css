@@ -1,0 +1,161 @@
+#mainpart{
+
+    margin-top: 100px;
+
+}
+
+.content{
+
+    background-color: rgba(27,27,27,1);
+    height: 100%;
+
+}
+
+.poster{
+
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    border-bottom: 1px solid #4d4d4d;
+}
+
+.title, .title2, .title3 {
+
+    font-family: Cormorant;
+    color: #ededed;
+    padding: 40px 0;
+    border-bottom: 1px solid #4d4d4d;
+
+}
+
+.title2, .title3{
+
+    border-top: 1px solid #4d4d4d;
+
+}
+
+.sinopsis, .note{
+
+    padding: 40px 100px;
+
+}
+
+.sinopsis h2, .note h2{
+
+    font-family: Cormorant;
+    color: #ededed;
+    font-size: 27px;
+    text-align: justify;
+    text-overflow: ellipsis;
+
+}
+
+a{
+
+    text-decoration: none;
+    color: rgb(194, 74, 74);
+
+}
+
+.span{
+
+    height: 100px;
+    width: 100px;
+    max-width: 100%;
+
+}
+
+.genres h2{
+
+    font-family: Cormorant;
+    color: #ededed;
+    font-size: 27px;
+
+}
+
+.genres .row{
+
+    padding-top: 100px;
+
+}
+
+.genres{
+
+    margin-bottom: 100px;
+
+}
+
+@media (max-width: 768px){
+
+    #mainpart{
+
+        margin-top: 100px;
+    
+    }
+
+    .sinopsis, .note{
+
+        padding: 20px 40px;
+    
+    }  
+
+    .sinopsis h2, .note h2{
+
+        font-family: Cormorant;
+        color: #ededed;
+        text-align: left;
+        font-size: 25px;
+    
+    }
+
+    .genres{
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+    
+    }
+
+    .genres .row{
+
+        padding: 0px;
+        max-width: 100%;
+        margin: 0;
+    
+    }
+
+    .genres .row .col-md-3{
+
+        padding: 20px 0px;
+    
+    }
+
+}
+
+@media (max-width: 320px){
+
+    .sinopsis, .note{
+
+        padding: 20px 20px;
+    
+    }  
+
+    .sinopsis h2, .note h2{
+
+        word-wrap: break-word;
+    
+    }
+
+    .title, .title2, .title3{
+
+        word-wrap: break-word;
+    
+    }
+
+    .genres .row .col-md-3 h2{
+
+        word-wrap: break-word;
+
+    }
+    
+
+}
