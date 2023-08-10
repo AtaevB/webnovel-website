@@ -1,12 +1,92 @@
 #mainpart{
 
-    margin-top: 150px;
+    margin-top: 100px;
 
 }
 
 .content{
 
     background-color: rgba(27,27,27,1);
-    height: 1000px;
+    height: 100%;
+
+}
+
+.poster{
+
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    border-bottom: 1px solid #4d4d4d;
+
+}
+
+.title, .title2{
+
+    font-family: CormorantUnicase;
+    color: #ededed;
+    padding: 40px 0;
+    border-bottom: 1px solid #4d4d4d;
+
+}
+
+.title2{
+
+border-top: 1px solid #4d4d4d;
+
+}
+
+.text{
+
+    padding: 40px 100px;
+    font-family: Cormorant;
+    color: #ededed;
+    font-size: 27px;
+    text-align: justify;
+    text-overflow: ellipsis;
+    
+}
+
+.text a{
+
+    text-decoration: none;
+    color: rgb(194, 74, 74);
+
+}
+
+
+@media (max-width: 768px){
+
+    .text{
+        padding: 20px 40px;
+        font-family: Cormorant;
+        color: #ededed;
+        text-align: left;
+        font-size: 25px;
+    
+    }
+}
+
+@media (max-width: 450px){
+
+    .text{
+
+        padding: 20px 5px;
+        word-wrap: break-word;
+    }  
+}
+
+@media (max-width: 320px){
+
+    .sinopsis h2, .note h2{
+
+        word-wrap: break-word;
+    
+    }
+
+    .title, .title2{
+
+        word-wrap: break-word;
+    
+    }
 
 }

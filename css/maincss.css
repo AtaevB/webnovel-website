@@ -21,7 +21,7 @@
 
 .title, .title2, .title3 {
 
-    font-family: Cormorant;
+    font-family: CormorantUnicase;
     color: #ededed;
     padding: 40px 0;
     border-bottom: 1px solid #4d4d4d;
@@ -42,7 +42,7 @@
 
 .sinopsis h2, .note h2{
 
-    font-family: Cormorant;
+    font-family: 'Times New Roman', Times, serif;
     color: #ededed;
     font-size: 27px;
     text-align: justify;

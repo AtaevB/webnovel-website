@@ -1,0 +1,183 @@
+#mainpart{
+
+    margin-top: 150px;
+
+}
+
+.content{
+
+    background-color: rgba(27,27,27,1);
+    height: 100%;
+
+}
+
+@media (max-width:575px) {
+    
+    #mainpart{
+
+        margin-top: 100px;
+    
+    }
+
+}
+
+.title h1{
+
+    font-family: CormorantUnicase;
+    font-size: 45px;
+    color: #ededed;
+    word-wrap: break-word;
+
+}
+
+.poster img{
+
+    border: 4px double #ededed;
+    width: 90%;
+
+}
+
+.sinopsis{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 25px 70px;
+    border-top: 1px solid #4d4d4d;
+    border-bottom: 1px solid #4d4d4d;
+    word-wrap: break-word;
+}
+
+.sinopsis h2{
+
+    font-family: Cormorant;
+    color: #ededed;
+    font-size: 27px;
+    text-align: justify;
+    text-overflow: ellipsis;
+    
+}
+
+.tablecontent{
+
+    padding-left: 100px;
+    font-family: CormorantUnicase;
+    color: #ededed;
+    word-wrap: break-word;
+}
+
+.tablecontent h2{
+
+    font-weight: bolder;
+    font-size: 40px;
+
+}
+
+.tablecontent ul li a{
+
+    text-decoration: none;
+    color: #ededed;
+    font-size: 30px;
+    width: 100%;
+    display: block;
+
+}
+
+.tablecontent ul li {
+    position: relative;
+    height: 100%;
+ }
+ 
+
+.tablecontent ul{
+
+    list-style-type: none;
+
+}
+
+.tablecontent ul li::before{
+
+    content: ' ';
+    background-color: #7AB1FF;
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.tablecontent ul li:hover::before{
+
+    opacity: 0.5;
+    
+}
+
+.warning{
+
+    border-top: 1px solid #4d4d4d;
+    border-bottom: 1px solid #4d4d4d;
+
+}
+
+.warning h1{
+
+    font-size: 40px;
+    position: relative;
+    word-wrap: break-word;
+    font-family: CormorantUnicase;
+    color: #ededed;
+}
+
+.warning h2{
+
+    font-size: 35px;
+    position: relative;
+    font-family: CormorantUnicase;
+    color: #ededed;
+    word-wrap: break-word;
+
+}
+
+@media (max-width: 768px){
+
+    .tablecontent{
+
+        padding-left: 30px;
+
+    }
+
+    .sinopsis{
+
+        padding: 25px 50px;
+
+    }
+
+}
+
+@media (max-width: 564px){
+
+    .tablecontent{
+
+        padding-left: 10px;
+
+    }
+
+    .sinopsis{
+
+        padding: 25px 20px;
+
+    }
+
+    .sinopsis h2{
+        text-align: left;
+    }
+
+    .tablecontent ul li{
+
+        padding: 5px 0px;
+        padding-right: 5px;
+
+    }
+
+
+}

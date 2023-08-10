@@ -7,6 +7,233 @@
 .content{
 
     background-color: rgba(27,27,27,1);
-    height: 1000px;
+    height: 100%;
+
+}
+
+@media (max-width:575px) {
+    
+    #mainpart{
+
+        margin-top: 100px;
+    
+    }
+
+}
+
+.starttitle{
+
+    color: #ededed;
+    font-family: Cormorant;
+    word-wrap: break-word;
+
+}
+
+.chapter{
+
+    border-bottom: 1px solid #4d4d4d;
+
+}
+
+.chapter img{
+
+    width: 100%;   
+
+}
+
+.poster{
+
+    display: flex;
+    justify-content: center; /* центрирование по горизонтали */
+    align-items: center; /* центрирование по вертикали */ 
+    
+}
+
+.poster::after{
+
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    pointer-events: none;
+
+}
+
+.poster:hover::after{
+
+    opacity: 0;
+    
+}
+
+.chapter .poster:hover h1 {
+
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.poster{
+
+    text-align: center; /* выравнивание текста внутри блока по центру */
+    position: relative;
+    border: 4px double #ededed;
+
+}
+
+.chapter h1 {
+
+    font-family: CormorantUnicase;
+    color: #ededed;
+    font-size: 50px;
+    position: absolute;
+    z-index: 9999;
+
+}
+
+.sinopsis{
+
+    padding: 40px 50px;
+
+}
+
+.sinopsis h2{
+
+    font-family: Cormorant;
+    color: #ededed;
+    font-size: 27px;
+    text-align: justify;
+    text-overflow: ellipsis;
+
+}
+
+.sinopsis .title{
+ 
+    font-size: 30px;
+    word-wrap: break-word;
+
+}
+
+details > summary{
+
+    color: #ededed;
+    font-size: 30px;
+    font-family: Cormorant;
+}
+
+.warning h1{
+
+    font-size: 40px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.warning h2{
+
+    font-size: 35px;
+    position: relative;
+    font-family: CormorantUnicase;
+    color: #ededed;
+    word-wrap: break-word;
+
+}
+
+
+
+@media (max-width: 991px){
+
+    .chapter h1{
+
+        font-size: 40px;
+
+    }
+
+}
+
+@media (max-width: 767px){
+
+    .chapter h1{
+
+        font-size: 30px;
+
+    }
+
+    .sinopsis{
+
+        padding: 20px 40px;
+    
+    }  
+
+    .sinopsis h2{
+
+        font-family: Cormorant;
+        color: #ededed;
+        text-align: left;
+        font-size: 25px;
+    
+    }
+
+}
+
+@media (max-width: 485px){
+
+    .chapter h1{
+
+        font-size: 25px;
+        word-wrap: break-word;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    .sinopsis{
+
+        padding: 20px 20px;
+        word-wrap: break-word;
+    
+    }  
+
+    .poster{
+
+        display: block;
+
+    }
+    
+    .chapter img{
+
+        border: 4px double #ededed;   
+    
+    }
+
+    .chapter a{
+
+        text-decoration: none;
+
+    }
+
+    .poster::after{
+
+        display: none;
+
+    }
+
+    .poster{
+
+        border: 0px;
+
+    }
+
+    .chapter h1{
+
+        position: relative;
+        font-size: 25px;
+        word-wrap: break-word;
+    }
 
 }
