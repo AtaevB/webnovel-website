@@ -5,6 +5,6 @@ const chapterLinks = document.querySelectorAll(".chapters a");
       
       const chapterIndex = parseInt(link.getAttribute("data-chapter"), 10);
       localStorage.setItem("selectedChapterIndex", chapterIndex);
-      window.location.href = "index.html";
+      window.location.href = "read.html";
     });
   });
